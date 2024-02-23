@@ -142,5 +142,5 @@ npx typeorm entity:create ./src/models/User
 ### Drop database
 ```sh
 npx typeorm-ts-node-commonjs schema:drop -d ./src/database/data-source.ts
-
+```
 
