@@ -126,12 +126,12 @@ npx typeorm migration:create ./src/database/migrations/CreateUsersTable
 
 ### Execute migrations
 ```sh
-npx typeorm-ts-node-commonjs migration:run -d ./src/database/db.ts 
+npx typeorm-ts-node-commonjs migration:run -d ./src/database/data-source.ts 
 ```
 
 ### Revert migrations
 ```sh
-npx typeorm-ts-node-commonjs migration:revert -d ./src/database/db.ts 
+npx typeorm-ts-node-commonjs migration:revert -d ./src/database/data-source.ts 
 ```
 
 ### Create models (example)
@@ -139,5 +139,8 @@ npx typeorm-ts-node-commonjs migration:revert -d ./src/database/db.ts
 npx typeorm entity:create ./src/models/User
 ```
 
+### Drop database
+```sh
+npx typeorm-ts-node-commonjs schema:drop -d ./src/database/data-source.ts
 
 
