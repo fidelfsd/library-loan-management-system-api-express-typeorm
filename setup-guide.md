@@ -2,6 +2,11 @@
 
 ## 🛠️ Install modules
 
+### Init project
+```sh
+npm init -y
+```
+
 ### Express
 ```sh
 npm i express
